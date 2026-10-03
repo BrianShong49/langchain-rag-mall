@@ -1,0 +1,32 @@
+# ============ Python / FastAPI 后端 ============
+server/.env
+server/venv/
+**/__pycache__/
+*.py[cod]
+*.log
+server/vector_store/
+server/chroma_db/
+.pytest_cache/
+
+# ============ Node / Vue 前端 ============
+client/node_modules/
+client/dist/
+client/dist-ssr/
+*.local
+
+# ============ 运行时上传目录 ============
+# 仅提交 knowledge/ 作为示例知识库（供重建向量库），其余为用户生成内容
+uploads/avatar/
+uploads/banner/
+uploads/product/
+
+# ============ 微信小程序 ============
+# 私有配置含本机 appid/调试开关，不入库
+weixin/project.private.config.json
+
+# ============ 系统 / 编辑器 ============
+.DS_Store
+Thumbs.db
+.conda/
+.vscode/
+.idea/

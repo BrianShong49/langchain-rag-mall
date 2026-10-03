@@ -1,0 +1,19 @@
+<!-- AI智能客服对话页面(RAG增强) -->
+<view class="chat-page">
+  <scroll-view class="chat-list" scroll-y scroll-into-view="{{scrollTo}}" scroll-with-animation>
+    <view class="chat-item {{item.role}}" wx:for="{{messages}}" wx:key="id" id="msg-{{index}}">
+      <view class="chat-bubble">
+        <text>{{item.content}}</text>
+      </view>
+      <text class="chat-time">{{item.time}}</text>
+    </view>
+    <view wx:if="{{loading}}" class="chat-item assistant">
+      <view class="chat-bubble"><text>正在思考...</text></view>
+    </view>
+  </scroll-view>
+
+  <view class="chat-input-bar">
+    <input class="chat-input" placeholder="请输入您的问题..." value="{{inputText}}" bindinput="onInput" confirm-type="send" bindconfirm="sendMessage" />
+    <button class="btn-send" bindtap="sendMessage" disabled="{{loading}}">发送</button>
+  </view>
+</view>
