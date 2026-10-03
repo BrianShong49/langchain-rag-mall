@@ -5,7 +5,6 @@ server/venv/
 *.py[cod]
 *.log
 server/vector_store/
-server/chroma_db/
 .pytest_cache/
 
 # ============ Node / Vue 前端 ============

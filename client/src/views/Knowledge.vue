@@ -46,7 +46,7 @@
 <script setup>
 /**
  * 知识库管理页面
- * 支持上传txt/doc/pdf/markdown文件并向量化到Chroma
+ * 支持上传txt/doc/pdf/markdown文件并向量化到FAISS
  */
 import { ref, reactive, onMounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'

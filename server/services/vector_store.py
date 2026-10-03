@@ -2,8 +2,8 @@
 FAISS 向量数据库服务
 负责文档向量化存储和相似检索
 
-注：原方案使用 ChromaDB，但在本机 Windows 环境下 chromadb 的 C++/Rust 原生层
-（chroma-hnswlib）会稳定触发段错误（Segmentation fault），故改用 FAISS。
+选用 FAISS 作为向量检索后端：知识库规模小（数十~数百个分块），
+FAISS 轻量、进程内加载、无独立向量库服务依赖，单机即可支撑语义检索。
 """
 from typing import List, Optional
 import os

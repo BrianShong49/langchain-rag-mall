@@ -7,6 +7,5 @@ venv/
 .env
 *.log
 .DS_Store
-chroma_db/
 vector_store/
 uploads/
